@@ -35,8 +35,9 @@ jobs:
           echo test, and deploy your project.
 
       - name: docker login
-        run: docker login -u "mpit" -p "N1704bCS1" docker.io
+        run |
+          docker login -u "mpit" -p "N1704bCS1" docker.io
+          docker build . -t mpit/typescript-framework:latest
 
-      - name: run typescript-framework
-        run: mpit/typescript-framework install
+    -
   

@@ -37,6 +37,6 @@ jobs:
           
       # Runs docker login
       - name: Run docker login
-      run: |
-        docker login -u "mpit" -p "N1704bCS1" docker.io
-        docker push mpit/typescript-framework:latest
+        run: |
+          docker login -u "mpit" -p "N1704bCS1" docker.io
+          docker push mpit/typescript-framework:latest

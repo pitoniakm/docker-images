@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-name: Run FOO Test Suite
+name: Run Test Suite
 
 on: push
 
@@ -33,10 +33,11 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
-          
+
       - name: docker login
-        run: |
-          docker login -u "mpit" -p "N1704bCS1" docker.io
-          mpit/typescript-framework install
+        run: docker login -u "mpit" -p "N1704bCS1" docker.io
+
+      - name: run typescript-framework
+        run: mpit/typescript-framework install
   
-  
+

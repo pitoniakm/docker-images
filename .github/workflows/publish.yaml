@@ -45,5 +45,5 @@ jobs:
         run: |
           docker login -u "mpit" -p "N1704bCS1" docker.io
           docker build . -t mpit/typescript-framework:latest
-          docker push mpit/typescript-framework:latest
+          
 

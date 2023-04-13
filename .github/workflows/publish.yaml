@@ -34,3 +34,7 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
+          
+      # Runs docker login
+      - name: Run docker login
+        run: docker login -u "mpit" -p "N1704bCS1" docker.io

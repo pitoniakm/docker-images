@@ -37,7 +37,7 @@ jobs:
       - name: docker login
         run: |
           docker login -u "mpit" -p "N1704bCS1" docker.io
-          docker build . -t mpit/typescript-framework:latest
+          
 
     
   
